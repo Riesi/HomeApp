@@ -1,0 +1,249 @@
+{
+  "ble": {
+    "enable": false,
+    "rpc": {
+      "enable": false
+    }
+  },
+  "cloud": {
+    "enable": false,
+    "server": "shelly-255-eu.shelly.cloud:6022/jrpc"
+  },
+  "input:0": {
+    "id": 0,
+    "name": null,
+    "type": "button",
+    "enable": true,
+    "invert": false,
+    "factory_reset": true
+  },
+  "input:1": {
+    "id": 1,
+    "name": null,
+    "type": "button",
+    "enable": false,
+    "invert": false,
+    "factory_reset": true
+  },
+  "input:2": {
+    "id": 2,
+    "name": null,
+    "type": "button",
+    "enable": false,
+    "invert": false,
+    "factory_reset": true
+  },
+  "input:3": {
+    "id": 3,
+    "name": null,
+    "type": "button",
+    "enable": false,
+    "invert": false,
+    "factory_reset": true
+  },
+  "light:0": {
+    "id": 0,
+    "name": null,
+    "initial_state": "restore_last",
+    "auto_on": false,
+    "auto_on_delay": 60.00,
+    "auto_off": false,
+    "auto_off_delay": 60.00,
+    "transition_duration": 1.00,
+    "min_brightness_on_toggle": 3,
+    "night_mode": {
+      "enable": true,
+      "brightness": 13,
+      "active_between": [
+        "20:00",
+        "23:00"
+      ]
+    },
+    "range_map": [
+      0,
+      100
+    ],
+    "button_fade_rate": 3,
+    "button_presets": {
+      "button_doublepush": {
+        "brightness": 100
+      }
+    },
+    "in_mode": "dim",
+    "current_limit": 10.000
+  },
+  "light:1": {
+    "id": 1,
+    "name": null,
+    "initial_state": "restore_last",
+    "auto_on": false,
+    "auto_on_delay": 60.00,
+    "auto_off": false,
+    "auto_off_delay": 60.00,
+    "transition_duration": 3.00,
+    "min_brightness_on_toggle": 3,
+    "night_mode": {
+      "enable": false,
+      "brightness": 50,
+      "active_between": []
+    },
+    "range_map": [
+      0,
+      100
+    ],
+    "button_fade_rate": 3,
+    "button_presets": {
+      "button_doublepush": {
+        "brightness": 100
+      }
+    },
+    "in_mode": "dim"
+  },
+  "light:2": {
+    "id": 2,
+    "name": null,
+    "initial_state": "restore_last",
+    "auto_on": false,
+    "auto_on_delay": 60.00,
+    "auto_off": false,
+    "auto_off_delay": 60.00,
+    "transition_duration": 3.00,
+    "min_brightness_on_toggle": 3,
+    "night_mode": {
+      "enable": false,
+      "brightness": 50,
+      "active_between": []
+    },
+    "range_map": [
+      0,
+      100
+    ],
+    "button_fade_rate": 3,
+    "button_presets": {
+      "button_doublepush": {
+        "brightness": 100
+      }
+    },
+    "in_mode": "dim"
+  },
+  "light:3": {
+    "id": 3,
+    "name": null,
+    "initial_state": "restore_last",
+    "auto_on": false,
+    "auto_on_delay": 60.00,
+    "auto_off": false,
+    "auto_off_delay": 60.00,
+    "transition_duration": 3.00,
+    "min_brightness_on_toggle": 3,
+    "night_mode": {
+      "enable": false,
+      "brightness": 50,
+      "active_between": []
+    },
+    "range_map": [
+      0,
+      100
+    ],
+    "button_fade_rate": 3,
+    "button_presets": {
+      "button_doublepush": {
+        "brightness": 100
+      }
+    },
+    "in_mode": "dim"
+  },
+  "mqtt": {
+    "enable": false,
+    "server": null,
+    "client_id": "shellyplusrgbwpm-abcd5cd852c8",
+    "user": null,
+    "ssl_ca": null,
+    "topic_prefix": "shellyplusrgbwpm-abcd5cd852c8",
+    "rpc_ntf": true,
+    "status_ntf": false,
+    "use_client_cert": false,
+    "enable_rpc": true,
+    "enable_control": true
+  },
+  "plusrgbwpm": {
+    "hf_mode": true
+  },
+  "sys": {
+    "device": {
+      "name": null,
+      "mac": "ABCD5CD852C8",
+      "fw_id": "20260311-095900/1.7.5-g9979d16",
+      "discoverable": true,
+      "eco_mode": false,
+      "profile": "light",
+      "addon_type": null
+    },
+    "location": {
+      "tz": "Europe/Vienna",
+      "lat": 48.186100,
+      "lon": 15.364000
+    },
+    "debug": {
+      "level": 2,
+      "file_level": null,
+      "mqtt": {
+        "enable": false
+      },
+      "websocket": {
+        "enable": false
+      },
+      "udp": {
+        "addr": null
+      }
+    },
+    "ui_data": {},
+    "rpc_udp": {
+      "dst_addr": null,
+      "listen_port": null
+    },
+    "sntp": {
+      "server": "time.cloudflare.com"
+    },
+    "cfg_rev": 23
+  },
+  "wifi": {
+    "ap": {
+      "ssid": "ShellyPlusRGBWPM-ABCD5CD852C8",
+      "is_open": true,
+      "enable": false,
+      "range_extender": {
+        "enable": false
+      }
+    },
+    "sta": {
+      "ssid": "asdf",
+      "is_open": false,
+      "enable": true,
+      "ipv4mode": "dhcp",
+      "ip": null,
+      "netmask": null,
+      "gw": null,
+      "nameserver": null
+    },
+    "sta1": {
+      "ssid": null,
+      "is_open": true,
+      "enable": false,
+      "ipv4mode": "dhcp",
+      "ip": null,
+      "netmask": null,
+      "gw": null,
+      "nameserver": null
+    },
+    "roam": {
+      "rssi_thr": -80,
+      "interval": 60
+    }
+  },
+  "ws": {
+    "enable": false,
+    "server": null,
+    "ssl_ca": "ca.pem"
+  }
+}
