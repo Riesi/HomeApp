@@ -123,7 +123,7 @@ class ShellyAPIParser(resources: Resources, private val version: Int) :
         for (switchKey in config.keys()) {
             val switchKeyTrim = switchKey.split(":", limit = 2)[0]
             when(switchKeyTrim) {
-                "switch", "pm1" -> {
+                "switch", "pm1", "light" -> {
                     listItems.addAll(parseV2(switchKey, config, status))
                 }
                 else -> {}
