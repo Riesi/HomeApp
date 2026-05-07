@@ -130,6 +130,12 @@ class ShellyAPIParser(resources: Resources, private val version: Int) :
                         config,
                     ),
                 )
+                listItems.addAll(
+                    parsePowermeter1V2(
+                        config.getJSONObject(switchKey),
+                        status.getJSONObject(switchKey),
+                    )
+                )
             } else if (switchKey.startsWith("pm1:")) {
                 listItems.addAll(parsePowermeter1V2(config.getJSONObject(switchKey), status.getJSONObject(switchKey)))
             }
